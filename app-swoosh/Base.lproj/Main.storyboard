@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,16 +24,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="n0l-nD-4FB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="n0l-nD-4FB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-6I-9L0">
-                                <rect key="frame" x="127" y="12" width="121" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gh1-6I-9L0">
+                                <rect key="frame" x="128" y="40" width="119" height="20"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-rX-loI">
-                                <rect key="frame" x="16" y="133" width="343" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb3-rX-loI">
+                                <rect key="frame" x="70" y="94" width="235.5" height="66"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -61,10 +60,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n0l-nD-4FB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aYC-6b-cNu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n0l-nD-4FB" secondAttribute="trailing" id="c8R-qr-OzQ"/>
-                            <constraint firstItem="n0l-nD-4FB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gwv-Br-5CQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="n0l-nD-4FB" secondAttribute="bottom" id="yZ1-PP-JJu"/>
+                            <constraint firstItem="n0l-nD-4FB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lq1-56-8mQ"/>
+                            <constraint firstItem="n0l-nD-4FB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ny5-Ka-Lgv"/>
+                            <constraint firstItem="gh1-6I-9L0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QcT-my-Dce"/>
+                            <constraint firstItem="Jb3-rX-loI" firstAttribute="bottom" secondItem="gh1-6I-9L0" secondAttribute="bottom" constant="100" id="Tis-pB-6py"/>
+                            <constraint firstItem="gh1-6I-9L0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="UGm-Fi-NrL"/>
+                            <constraint firstItem="n0l-nD-4FB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dcA-kP-CfN"/>
+                            <constraint firstItem="n0l-nD-4FB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qG6-Ur-hqf"/>
+                            <constraint firstItem="Jb3-rX-loI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vdC-9s-9sO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -75,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+            <point key="canvasLocation" x="151" y="136"/>
         </scene>
     </scenes>
     <resources>
