@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="151" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="bpZ-gY-W67">
             <objects>
-                <viewController id="NxG-Nc-bi1" sceneMemberID="viewController">
+                <viewController id="NxG-Nc-bi1" customClass="LeagueVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NxE-n4-kge">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,6 +151,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="NxG-Nc-bi1" eventType="touchUpInside" id="DcO-Wm-zE4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nK-lb-OHy">
                                 <rect key="frame" x="0.0" y="30" width="44" height="33"/>
@@ -184,16 +187,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1x2-uh-ASn"/>
                     </view>
+                    <connections>
+                        <segue destination="63v-KW-0sg" kind="show" identifier="skillVCSegue" id="3Um-eh-b0U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdW-Oh-oCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="thK-aL-iYd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="928.79999999999995" y="135.38230884557723"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="y30-eu-CKx">
             <objects>
-                <viewController id="63v-KW-0sg" sceneMemberID="viewController">
+                <viewController id="63v-KW-0sg" customClass="SkillVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2dv-EV-tbB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
