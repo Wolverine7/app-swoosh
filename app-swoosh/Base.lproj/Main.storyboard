@@ -128,22 +128,31 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39579665489999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="Mens"/>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="NxG-Nc-bi1" eventType="touchUpInside" id="cqW-gf-aFX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKb-Rj-T80" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="345" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39579665489999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="Womens"/>
+                                        <connections>
+                                            <action selector="onWomenTapped:" destination="NxG-Nc-bi1" eventType="touchUpInside" id="NtL-tN-Pbl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEy-Rq-LvK" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="120" width="345" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39579665489999999" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <state key="normal" title="Co-ed"/>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="NxG-Nc-bi1" eventType="touchUpInside" id="kFS-hg-M01"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUZ-Z2-aYd" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUZ-Z2-aYd" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="15" y="597" width="345" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39579665489999999" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -188,6 +197,7 @@
                         <viewLayoutGuide key="safeArea" id="1x2-uh-ASn"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="kUZ-Z2-aYd" id="nth-XH-fz8"/>
                         <segue destination="63v-KW-0sg" kind="show" identifier="skillVCSegue" id="3Um-eh-b0U"/>
                     </connections>
                 </viewController>
